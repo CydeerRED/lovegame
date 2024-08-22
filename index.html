@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لعبة الحب</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="loginContainer" class="container">
+        <h2>تسجيل الدخول</h2>
+        <form id="loginForm">
+            <input type="password" id="password" placeholder="أدخل كلمة المرور" required>
+            <button type="submit">دخول</button>
+        </form>
+    </div>
+
+    <div id="genderContainer" class="container" style="display: none;">
+        <h2>اختر الجنس</h2>
+        <button onclick="selectGender('ذكر')">ذكر</button>
+        <button onclick="selectGender('أنثى')">أنثى</button>
+    </div>
+
+    <div id="gameContainer" class="container" style="display: none;">
+        <div class="heart-container">
+            <div class="big-heart" id="bigHeart"></div>
+        </div>
+        <div class="chat-container">
+            <div class="header">
+                <h1>لعبة الحب</h1>
+                <p>قلبان، محادثة واحدة</p>
+            </div>
+            <div class="chat-window" id="chatWindow">
+                <!-- Chat messages will appear here -->
+            </div>
+            <form id="chatForm">
+                <input type="text" id="messageInput" placeholder="اكتب رسالتك..." required>
+                <button type="submit">إرسال</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
